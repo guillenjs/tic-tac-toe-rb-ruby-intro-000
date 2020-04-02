@@ -87,3 +87,6 @@ def winner(board)
     board[winning_combo.first]
   end
 end
+
+def play(board)
+end
