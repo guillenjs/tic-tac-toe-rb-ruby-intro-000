@@ -89,10 +89,6 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
-  if input = true
-    puts board
-  else
-    play(board)
-  end
+  until over? == true
+    turn
 end
