@@ -89,4 +89,5 @@ def winner(board)
 end
 
 def play(board)
+  board = gets.each
 end
