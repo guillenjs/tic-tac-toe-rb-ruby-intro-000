@@ -20,6 +20,24 @@ board[win_combination[0]] == board[win_combination[1]] && board[win_combination[
 end
 end
 
+def turn_count(board)
+  count = 0
+  board.each do |index|
+    if index == "X" || index == "O"
+    count += 1
+    end
+  end
+  count
+end
+
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    return "X"
+  else
+    "O"
+  end
+end
+
 def full? (board)
   board.none? {|full_board| full_board == " " || full_board == nil}
 end
