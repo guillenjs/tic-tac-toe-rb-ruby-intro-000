@@ -89,5 +89,5 @@ def winner(board)
 end
 
 def play(board)
-  board.each
+  
 end
