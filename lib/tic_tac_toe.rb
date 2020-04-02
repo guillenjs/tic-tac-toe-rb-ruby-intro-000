@@ -17,8 +17,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.find do |win_combination|
       board[win_combination[0]] == board[win_combination[1]] && board[win_combination[0]] == board[win_combination[2]] && position_taken?(board, win_combination[0])
+    end
 end
-end
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
