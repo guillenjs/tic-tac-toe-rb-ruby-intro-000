@@ -93,6 +93,6 @@ def play(board)
   if input = true
     put board
   else
-    play(board
+    play(board)
   end
 end
