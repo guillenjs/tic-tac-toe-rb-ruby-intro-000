@@ -91,4 +91,5 @@ end
 def play(board)
   until over? == true
     turn
+  end
 end
