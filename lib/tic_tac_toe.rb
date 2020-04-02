@@ -91,7 +91,7 @@ end
 def play(board)
   input = gets
   if input = true
-    put board
+    puts board
   else
     play(board)
   end
